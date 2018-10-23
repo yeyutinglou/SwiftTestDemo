@@ -34,6 +34,7 @@
 		0653F3D8217EEC450087ADA1 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F3D3217EEC450087ADA1 /* Flashcard.swift */; };
 		0653F3D9217EEC450087ADA1 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F3D4217EEC450087ADA1 /* Deck.swift */; };
 		0653F3DA217EEC450087ADA1 /* TermViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F3D5217EEC450087ADA1 /* TermViewController.swift */; };
+		0653F3DD217EFB4B0087ADA1 /* TopMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F3DC217EFB4B0087ADA1 /* TopMediaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		0653F3D3217EEC450087ADA1 /* Flashcard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
 		0653F3D4217EEC450087ADA1 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		0653F3D5217EEC450087ADA1 /* TermViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermViewController.swift; sourceTree = "<group>"; };
+		0653F3DC217EFB4B0087ADA1 /* TopMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMediaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				0653F3C8217ECA4B0087ADA1 /* Gesturizer */,
 				0653F3CD217EEB130087ADA1 /* Painter */,
 				0653F3D0217EEC450087ADA1 /* Flashcards */,
+				0653F3DB217EFB240087ADA1 /* RSSReader */,
 				0653F37A217EB32F0087ADA1 /* Main.storyboard */,
 				0653F37D217EB3320087ADA1 /* Assets.xcassets */,
 				0653F37F217EB3320087ADA1 /* LaunchScreen.storyboard */,
@@ -248,6 +251,14 @@
 				0653F3D5217EEC450087ADA1 /* TermViewController.swift */,
 			);
 			path = Flashcards;
+			sourceTree = "<group>";
+		};
+		0653F3DB217EFB240087ADA1 /* RSSReader */ = {
+			isa = PBXGroup;
+			children = (
+				0653F3DC217EFB4B0087ADA1 /* TopMediaViewController.swift */,
+			);
+			path = RSSReader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,6 +399,7 @@
 				0653F3A6217EB4E00087ADA1 /* StopWatch.swift in Sources */,
 				0653F3BB217EC3420087ADA1 /* NoiseMaker.swift in Sources */,
 				0653F3AD217EB7570087ADA1 /* UnitConverterViewController.swift in Sources */,
+				0653F3DD217EFB4B0087ADA1 /* TopMediaViewController.swift in Sources */,
 				0653F3CF217EEB130087ADA1 /* FingerPainterViewController.swift in Sources */,
 				0653F3AF217EB7570087ADA1 /* TemperatureRange.swift in Sources */,
 				0653F3B4217EBF240087ADA1 /* Pin.swift in Sources */,

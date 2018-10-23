@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AGG-Ig-Oze">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jei-J1-PVk">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -51,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-215" y="-201"/>
+            <point key="canvasLocation" x="-724" y="-345"/>
         </scene>
         <!--Unit Converter View Controller-->
         <scene sceneID="ogk-rp-oor">
@@ -89,7 +89,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kOs-Rw-HGi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="bIu-h2-Szy" customClass="TemperatureRange" customModule="SwiftDemo" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="846" y="134"/>
+            <point key="canvasLocation" x="-50" y="-346"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="DGA-ta-kcr">
@@ -138,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NJM-8I-Q5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1517" y="134"/>
+            <point key="canvasLocation" x="591" y="-346"/>
         </scene>
         <!--Noise Maker View Controller-->
         <scene sceneID="uUv-wF-PEP">
@@ -209,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YeC-dG-wJP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2164" y="136"/>
+            <point key="canvasLocation" x="1274" y="-347"/>
         </scene>
         <!--Gesturizer View Controller-->
         <scene sceneID="UaL-eH-XpZ">
@@ -280,7 +280,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2901" y="133"/>
+            <point key="canvasLocation" x="1911" y="-346"/>
         </scene>
         <!--Finger Painter View Controller-->
         <scene sceneID="28V-t4-gRm">
@@ -325,7 +325,192 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p1l-aa-wnG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3605" y="135"/>
+            <point key="canvasLocation" x="2578" y="-346"/>
+        </scene>
+        <!--Top App-->
+        <scene sceneID="cO5-qy-WFw">
+            <objects>
+                <viewController id="WwG-mC-zea" customClass="TopMediaViewController" customModule="SwiftTestDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gi2-A9-b92">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ia-mK-7L0">
+                                <rect key="frame" x="0.0" y="100" width="375" height="45"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="38"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yaH-Wn-BR3">
+                                <rect key="frame" x="87.5" y="182" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="IeP-HK-I7O"/>
+                                    <constraint firstAttribute="height" constant="200" id="tv8-Go-yvX"/>
+                                </constraints>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUO-P0-3Xv">
+                                <rect key="frame" x="169.5" y="153" width="36" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nYD-yV-aUU" firstAttribute="trailing" secondItem="5ia-mK-7L0" secondAttribute="trailing" id="E87-a5-MYb"/>
+                            <constraint firstItem="5ia-mK-7L0" firstAttribute="centerX" secondItem="Gi2-A9-b92" secondAttribute="centerX" id="IGB-IR-VCj"/>
+                            <constraint firstItem="5ia-mK-7L0" firstAttribute="leading" secondItem="nYD-yV-aUU" secondAttribute="leading" id="Igu-hi-ACZ"/>
+                            <constraint firstItem="yaH-Wn-BR3" firstAttribute="top" secondItem="UUO-P0-3Xv" secondAttribute="bottom" constant="8" id="MBB-gm-wkT"/>
+                            <constraint firstItem="yaH-Wn-BR3" firstAttribute="centerX" secondItem="Gi2-A9-b92" secondAttribute="centerX" id="Sxn-Rv-752"/>
+                            <constraint firstItem="UUO-P0-3Xv" firstAttribute="centerX" secondItem="Gi2-A9-b92" secondAttribute="centerX" id="cpI-k8-tnC"/>
+                            <constraint firstItem="5ia-mK-7L0" firstAttribute="top" secondItem="nYD-yV-aUU" secondAttribute="top" constant="80" id="p3m-zC-98k"/>
+                            <constraint firstItem="UUO-P0-3Xv" firstAttribute="top" secondItem="5ia-mK-7L0" secondAttribute="bottom" constant="8" id="y8j-Wx-2Nc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nYD-yV-aUU"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Top App" image="Top App Icon" id="tha-cg-09Z"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="feedURL" value="http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/limit=1/json"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="artistLabel" destination="UUO-P0-3Xv" id="p1N-gT-gou"/>
+                        <outlet property="imageView" destination="yaH-Wn-BR3" id="qbg-nz-om8"/>
+                        <outlet property="titleLabel" destination="5ia-mK-7L0" id="e8C-xA-mWY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ey-tA-bEp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-695" y="1655"/>
+        </scene>
+        <!--Top Album-->
+        <scene sceneID="Jsi-Hu-QTb">
+            <objects>
+                <viewController id="1v2-IX-hAw" customClass="TopMediaViewController" customModule="SwiftTestDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="miE-8z-mBK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="smp-uJ-y5t">
+                                <rect key="frame" x="0.0" y="100" width="375" height="45"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="38"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ddI-4T-i6k">
+                                <rect key="frame" x="87.5" y="182" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Bqk-QS-Ne7"/>
+                                    <constraint firstAttribute="height" constant="200" id="dkR-GL-85b"/>
+                                </constraints>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzt-J1-y0W">
+                                <rect key="frame" x="169.5" y="153" width="36" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qzt-J1-y0W" firstAttribute="top" secondItem="smp-uJ-y5t" secondAttribute="bottom" constant="8" id="EEh-3Q-lfx"/>
+                            <constraint firstItem="smp-uJ-y5t" firstAttribute="top" secondItem="A1L-CS-0Iy" secondAttribute="top" constant="80" id="XQf-dR-if1"/>
+                            <constraint firstItem="smp-uJ-y5t" firstAttribute="leading" secondItem="A1L-CS-0Iy" secondAttribute="leading" id="XcK-3o-Wek"/>
+                            <constraint firstItem="qzt-J1-y0W" firstAttribute="centerX" secondItem="miE-8z-mBK" secondAttribute="centerX" id="dvR-Z2-gpJ"/>
+                            <constraint firstItem="ddI-4T-i6k" firstAttribute="centerX" secondItem="miE-8z-mBK" secondAttribute="centerX" id="hbl-in-2Bp"/>
+                            <constraint firstItem="ddI-4T-i6k" firstAttribute="top" secondItem="qzt-J1-y0W" secondAttribute="bottom" constant="8" id="jpD-yg-wqH"/>
+                            <constraint firstItem="smp-uJ-y5t" firstAttribute="centerX" secondItem="miE-8z-mBK" secondAttribute="centerX" id="oFy-kK-orG"/>
+                            <constraint firstItem="A1L-CS-0Iy" firstAttribute="trailing" secondItem="smp-uJ-y5t" secondAttribute="trailing" id="xnu-zS-M7s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="A1L-CS-0Iy"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Top Album" image="Top Album Icon" id="Rjz-BS-hiZ"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="feedURL" value="http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/limit=1/json"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="artistLabel" destination="qzt-J1-y0W" id="ZwQ-Za-hzb"/>
+                        <outlet property="imageView" destination="ddI-4T-i6k" id="gud-rZ-Nc0"/>
+                        <outlet property="titleLabel" destination="smp-uJ-y5t" id="vAF-9U-Fqj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7fN-M8-D86" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-695" y="978"/>
+        </scene>
+        <!--Top Song-->
+        <scene sceneID="mAC-Hy-zkD">
+            <objects>
+                <viewController id="bd0-c9-5cq" customClass="TopMediaViewController" customModule="SwiftTestDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cAx-5D-tJ0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bcz-v4-1W0">
+                                <rect key="frame" x="0.0" y="100" width="375" height="45"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="38"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CJp-mb-i3g">
+                                <rect key="frame" x="87.5" y="182" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Z5J-y2-dZL"/>
+                                    <constraint firstAttribute="width" constant="200" id="h5C-q2-RW0"/>
+                                </constraints>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyA-Lg-BLI">
+                                <rect key="frame" x="169.5" y="153" width="36" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bcz-v4-1W0" firstAttribute="top" secondItem="IKl-lu-FjK" secondAttribute="top" constant="80" id="2tI-2E-abT"/>
+                            <constraint firstItem="tyA-Lg-BLI" firstAttribute="top" secondItem="bcz-v4-1W0" secondAttribute="bottom" constant="8" id="9dB-M9-TfY"/>
+                            <constraint firstItem="CJp-mb-i3g" firstAttribute="top" secondItem="tyA-Lg-BLI" secondAttribute="bottom" constant="8" id="FSI-42-2Aa"/>
+                            <constraint firstItem="bcz-v4-1W0" firstAttribute="centerX" secondItem="cAx-5D-tJ0" secondAttribute="centerX" id="Khf-F0-6YH"/>
+                            <constraint firstItem="bcz-v4-1W0" firstAttribute="leading" secondItem="IKl-lu-FjK" secondAttribute="leading" id="O1V-pj-ZqI"/>
+                            <constraint firstItem="CJp-mb-i3g" firstAttribute="centerX" secondItem="cAx-5D-tJ0" secondAttribute="centerX" id="YdM-Qb-qwd"/>
+                            <constraint firstItem="IKl-lu-FjK" firstAttribute="trailing" secondItem="bcz-v4-1W0" secondAttribute="trailing" id="ZKz-GU-6zt"/>
+                            <constraint firstItem="tyA-Lg-BLI" firstAttribute="centerX" secondItem="cAx-5D-tJ0" secondAttribute="centerX" id="q3W-Uq-N2P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IKl-lu-FjK"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Top Song" image="Top Song Icon" id="WuW-Qw-QTQ"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="feedURL" value="http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/limit=1/json"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="artistLabel" destination="tyA-Lg-BLI" id="jnE-5Z-Xx6"/>
+                        <outlet property="imageView" destination="CJp-mb-i3g" id="WAP-Wv-HLz"/>
+                        <outlet property="titleLabel" destination="bcz-v4-1W0" id="3P3-Gx-kLh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V9e-Q5-7OS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-695" y="319"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="RXa-kV-6iS">
+            <objects>
+                <tabBarController id="Jei-J1-PVk" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mCj-Et-XvG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bd0-c9-5cq" kind="relationship" relationship="viewControllers" id="cqh-FN-qvy"/>
+                        <segue destination="1v2-IX-hAw" kind="relationship" relationship="viewControllers" id="ahg-FM-xVV"/>
+                        <segue destination="WwG-mC-zea" kind="relationship" relationship="viewControllers" id="uu2-v7-Z8W"/>
+                        <segue destination="Bkb-oh-h17" kind="relationship" relationship="viewControllers" id="VKE-Ip-o5z"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FnS-ib-Ppl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1858" y="892"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Gzm-Ep-cIY">
@@ -453,5 +638,66 @@
             </objects>
             <point key="canvasLocation" x="6728" y="122"/>
         </scene>
+        <!--Top Movie-->
+        <scene sceneID="Ibh-SV-Dnt">
+            <objects>
+                <viewController id="Bkb-oh-h17" customClass="TopMediaViewController" customModule="SwiftTestDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pgM-om-ifF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gjW-YW-IRg">
+                                <rect key="frame" x="0.0" y="80" width="375" height="45"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="38"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2IS-5u-bJc">
+                                <rect key="frame" x="87.5" y="162" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Rxw-Gl-Gc6"/>
+                                    <constraint firstAttribute="height" constant="200" id="rM0-tC-hXL"/>
+                                </constraints>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzI-FD-c3O">
+                                <rect key="frame" x="169.5" y="133" width="36" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2IS-5u-bJc" firstAttribute="centerX" secondItem="pgM-om-ifF" secondAttribute="centerX" id="OpI-Qd-kb8"/>
+                            <constraint firstItem="gjW-YW-IRg" firstAttribute="top" secondItem="pgM-om-ifF" secondAttribute="top" constant="80" id="PxQ-n0-Lae"/>
+                            <constraint firstItem="dIf-8j-fSx" firstAttribute="trailing" secondItem="gjW-YW-IRg" secondAttribute="trailing" id="Zq9-aX-xK0"/>
+                            <constraint firstItem="jzI-FD-c3O" firstAttribute="centerX" secondItem="pgM-om-ifF" secondAttribute="centerX" id="h4E-7A-z7k"/>
+                            <constraint firstItem="jzI-FD-c3O" firstAttribute="top" secondItem="gjW-YW-IRg" secondAttribute="bottom" constant="8" id="kyU-T4-7mk"/>
+                            <constraint firstItem="gjW-YW-IRg" firstAttribute="leading" secondItem="dIf-8j-fSx" secondAttribute="leading" id="mw8-At-f7x"/>
+                            <constraint firstItem="gjW-YW-IRg" firstAttribute="centerX" secondItem="pgM-om-ifF" secondAttribute="centerX" id="pKn-nv-K9k"/>
+                            <constraint firstItem="2IS-5u-bJc" firstAttribute="top" secondItem="jzI-FD-c3O" secondAttribute="bottom" constant="8" id="tWc-7v-ul4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dIf-8j-fSx"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Top Movie" image="Top Movie Icon" id="Hb2-K9-r1R"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="feedURL" value="http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/limit=1/json"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="artistLabel" destination="jzI-FD-c3O" id="Sr6-5C-CYT"/>
+                        <outlet property="imageView" destination="2IS-5u-bJc" id="43d-IG-m70"/>
+                        <outlet property="titleLabel" destination="gjW-YW-IRg" id="RGd-i5-kKq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AAP-pg-vQR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-695" y="2319"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Top Album Icon" width="28" height="28"/>
+        <image name="Top App Icon" width="18" height="28"/>
+        <image name="Top Movie Icon" width="22" height="28"/>
+        <image name="Top Song Icon" width="17" height="29"/>
+    </resources>
 </document>
