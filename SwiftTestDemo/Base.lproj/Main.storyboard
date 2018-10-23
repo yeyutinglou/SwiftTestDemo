@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oSw-Qw-1QL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RXk-Hz-dHQ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -90,6 +90,55 @@
                 <customObject id="bIu-h2-Szy" customClass="TemperatureRange" customModule="SwiftDemo" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="846" y="134"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="DGA-ta-kcr">
+            <objects>
+                <viewController id="RXk-Hz-dHQ" customClass="MapViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7nQ-iG-5QE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fUM-nf-eTK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                                <connections>
+                                    <outlet property="delegate" destination="RXk-Hz-dHQ" id="iPa-gH-SKF"/>
+                                </connections>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYm-YZ-Ui6">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="zEr-KH-EsF"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="add" id="QVX-Zf-7QH">
+                                        <connections>
+                                            <action selector="dropPin:" destination="RXk-Hz-dHQ" id="QZM-GN-jbC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UYm-YZ-Ui6" firstAttribute="bottom" secondItem="qlF-R8-K42" secondAttribute="bottom" id="5Jn-xM-eZj"/>
+                            <constraint firstItem="fUM-nf-eTK" firstAttribute="leading" secondItem="qlF-R8-K42" secondAttribute="leading" id="8yr-i2-Vmc"/>
+                            <constraint firstItem="UYm-YZ-Ui6" firstAttribute="top" secondItem="fUM-nf-eTK" secondAttribute="bottom" id="PAi-ag-GPc"/>
+                            <constraint firstItem="UYm-YZ-Ui6" firstAttribute="leading" secondItem="qlF-R8-K42" secondAttribute="leading" id="X17-9B-kWk"/>
+                            <constraint firstItem="UYm-YZ-Ui6" firstAttribute="trailing" secondItem="qlF-R8-K42" secondAttribute="trailing" id="XBy-gk-tjW"/>
+                            <constraint firstItem="qlF-R8-K42" firstAttribute="trailing" secondItem="fUM-nf-eTK" secondAttribute="trailing" id="bdm-GO-yVL"/>
+                            <constraint firstItem="fUM-nf-eTK" firstAttribute="top" secondItem="qlF-R8-K42" secondAttribute="top" id="hwO-Xx-p9j"/>
+                            <constraint firstItem="UYm-YZ-Ui6" firstAttribute="top" secondItem="fUM-nf-eTK" secondAttribute="bottom" id="j5n-tv-fcm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qlF-R8-K42"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="fUM-nf-eTK" id="rbN-sA-YQw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NJM-8I-Q5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1517" y="134"/>
         </scene>
     </scenes>
 </document>
