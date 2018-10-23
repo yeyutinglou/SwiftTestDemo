@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Na-dp-mxb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s7B-ei-Qc1">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -210,6 +210,77 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YeC-dG-wJP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2164" y="136"/>
+        </scene>
+        <!--Gesturizer View Controller-->
+        <scene sceneID="UaL-eH-XpZ">
+            <objects>
+                <viewController id="s7B-ei-Qc1" customClass="GesturizerViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eW0-Vw-I1m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzr-du-Q5G">
+                                <rect key="frame" x="166.5" y="323.5" width="42" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="fzr-du-Q5G" firstAttribute="centerY" secondItem="eW0-Vw-I1m" secondAttribute="centerY" id="9PE-9s-4i1"/>
+                            <constraint firstItem="fzr-du-Q5G" firstAttribute="centerX" secondItem="eW0-Vw-I1m" secondAttribute="centerX" id="ZzU-Co-Rmo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UcI-c5-ict"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="4Ag-SF-Zkr" appends="YES" id="Xhm-Oa-GGT"/>
+                            <outletCollection property="gestureRecognizers" destination="1kg-29-hde" appends="YES" id="4Ph-Gg-5Qh"/>
+                            <outletCollection property="gestureRecognizers" destination="TO5-My-VAI" appends="YES" id="Phf-cX-pOv"/>
+                            <outletCollection property="gestureRecognizers" destination="6Xb-j0-zuy" appends="YES" id="nQl-XD-1Y0"/>
+                            <outletCollection property="gestureRecognizers" destination="7Lt-QC-Ovx" appends="YES" id="EQj-Ko-4h1"/>
+                            <outletCollection property="gestureRecognizers" destination="5IR-bk-Hra" appends="YES" id="be5-cE-27E"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="doubleTap" destination="5IR-bk-Hra" id="ijg-WT-gmg"/>
+                        <outlet property="gestureName" destination="fzr-du-Q5G" id="oNS-ZS-4H7"/>
+                        <outlet property="singleTap" destination="4Ag-SF-Zkr" id="cGv-T1-kl8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zp9-dF-jpT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="4Ag-SF-Zkr">
+                    <connections>
+                        <action selector="singleTap:" destination="s7B-ei-Qc1" id="GJH-QZ-I5I"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="5IR-bk-Hra">
+                    <connections>
+                        <action selector="doubleTap:" destination="s7B-ei-Qc1" id="Zns-lu-TXz"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pinchGestureRecognizer id="1kg-29-hde">
+                    <connections>
+                        <action selector="pinch:" destination="s7B-ei-Qc1" id="kPk-4d-oPj"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="TO5-My-VAI">
+                    <connections>
+                        <action selector="rotation:" destination="s7B-ei-Qc1" id="Uty-3C-sdl"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="7Lt-QC-Ovx">
+                    <connections>
+                        <action selector="leftSwipe:" destination="s7B-ei-Qc1" id="LIy-Cf-PvQ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="6Xb-j0-zuy">
+                    <connections>
+                        <action selector="swipe:" destination="s7B-ei-Qc1" id="XmG-oY-zjv"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2901" y="133"/>
         </scene>
     </scenes>
 </document>

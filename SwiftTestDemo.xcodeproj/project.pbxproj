@@ -27,6 +27,7 @@
 		0653F3C2217EC3510087ADA1 /* bubbles.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0653F3BE217EC3510087ADA1 /* bubbles.wav */; };
 		0653F3C3217EC3520087ADA1 /* guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0653F3BF217EC3510087ADA1 /* guitar.wav */; };
 		0653F3C4217EC3520087ADA1 /* monster.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0653F3C0217EC3510087ADA1 /* monster.wav */; };
+		0653F3CA217ECA580087ADA1 /* GesturizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F3C9217ECA580087ADA1 /* GesturizerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		0653F3BE217EC3510087ADA1 /* bubbles.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bubbles.wav; sourceTree = "<group>"; };
 		0653F3BF217EC3510087ADA1 /* guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guitar.wav; sourceTree = "<group>"; };
 		0653F3C0217EC3510087ADA1 /* monster.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = monster.wav; sourceTree = "<group>"; };
+		0653F3C9217ECA580087ADA1 /* GesturizerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GesturizerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				0653F3A9217EB7570087ADA1 /* Temperature */,
 				0653F3B0217EBF240087ADA1 /* Map */,
 				0653F3B8217EC3420087ADA1 /* Noise */,
+				0653F3C8217ECA4B0087ADA1 /* Gesturizer */,
 				0653F37A217EB32F0087ADA1 /* Main.storyboard */,
 				0653F37D217EB3320087ADA1 /* Assets.xcassets */,
 				0653F37F217EB3320087ADA1 /* LaunchScreen.storyboard */,
@@ -203,6 +206,14 @@
 				0653F3BA217EC3420087ADA1 /* NoiseMakerViewController.swift */,
 			);
 			path = Noise;
+			sourceTree = "<group>";
+		};
+		0653F3C8217ECA4B0087ADA1 /* Gesturizer */ = {
+			isa = PBXGroup;
+			children = (
+				0653F3C9217ECA580087ADA1 /* GesturizerViewController.swift */,
+			);
+			path = Gesturizer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +360,7 @@
 				0653F3AE217EB7570087ADA1 /* UnitConverter.swift in Sources */,
 				0653F377217EB32F0087ADA1 /* AppDelegate.swift in Sources */,
 				0653F3BC217EC3420087ADA1 /* NoiseMakerViewController.swift in Sources */,
+				0653F3CA217ECA580087ADA1 /* GesturizerViewController.swift in Sources */,
 				0653F3B3217EBF240087ADA1 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
