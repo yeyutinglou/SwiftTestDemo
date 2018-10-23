@@ -14,6 +14,7 @@
 		0653F381217EB3320087ADA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0653F37F217EB3320087ADA1 /* LaunchScreen.storyboard */; };
 		0653F38C217EB3320087ADA1 /* SwiftTestDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F38B217EB3320087ADA1 /* SwiftTestDemoTests.swift */; };
 		0653F397217EB3320087ADA1 /* SwiftTestDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F396217EB3320087ADA1 /* SwiftTestDemoUITests.swift */; };
+		0653F3A6217EB4E00087ADA1 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F3A5217EB4E00087ADA1 /* StopWatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0653F392217EB3320087ADA1 /* SwiftTestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0653F396217EB3320087ADA1 /* SwiftTestDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestDemoUITests.swift; sourceTree = "<group>"; };
 		0653F398217EB3320087ADA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0653F3A5217EB4E00087ADA1 /* StopWatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				0653F376217EB32F0087ADA1 /* AppDelegate.swift */,
-				0653F378217EB32F0087ADA1 /* ViewController.swift */,
+				0653F3A4217EB4CA0087ADA1 /* Clock */,
 				0653F37A217EB32F0087ADA1 /* Main.storyboard */,
 				0653F37D217EB3320087ADA1 /* Assets.xcassets */,
 				0653F37F217EB3320087ADA1 /* LaunchScreen.storyboard */,
@@ -123,6 +125,15 @@
 				0653F398217EB3320087ADA1 /* Info.plist */,
 			);
 			path = SwiftTestDemoUITests;
+			sourceTree = "<group>";
+		};
+		0653F3A4217EB4CA0087ADA1 /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				0653F378217EB32F0087ADA1 /* ViewController.swift */,
+				0653F3A5217EB4E00087ADA1 /* StopWatch.swift */,
+			);
+			path = Clock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0653F3A6217EB4E00087ADA1 /* StopWatch.swift in Sources */,
 				0653F379217EB32F0087ADA1 /* ViewController.swift in Sources */,
 				0653F377217EB32F0087ADA1 /* AppDelegate.swift in Sources */,
 			);
