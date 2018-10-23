@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oSw-Qw-1QL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -52,6 +52,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-215" y="-201"/>
+        </scene>
+        <!--Unit Converter View Controller-->
+        <scene sceneID="ogk-rp-oor">
+            <objects>
+                <viewController id="oSw-Qw-1QL" customClass="UnitConverterViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZOa-Fg-aLz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2fy-1g-FAb">
+                                <rect key="frame" x="0.0" y="361" width="375" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="bIu-h2-Szy" id="ytM-i6-qZT"/>
+                                    <outlet property="delegate" destination="oSw-Qw-1QL" id="KnS-bp-GaT"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mt-tW-VI7">
+                                <rect key="frame" x="157" y="112" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="pvw-Cs-jQ9"/>
+                    </view>
+                    <connections>
+                        <outlet property="celsiusPicker" destination="2fy-1g-FAb" id="3O8-09-5Fm"/>
+                        <outlet property="temperatureLabel" destination="9Mt-tW-VI7" id="kHg-sJ-oW1"/>
+                        <outlet property="temperatureRange" destination="bIu-h2-Szy" id="mq3-0j-ggi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kOs-Rw-HGi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="bIu-h2-Szy" customClass="TemperatureRange" customModule="SwiftDemo" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="846" y="134"/>
         </scene>
     </scenes>
 </document>
