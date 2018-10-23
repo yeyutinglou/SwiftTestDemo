@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s7B-ei-Qc1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N6n-9d-2tO">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -281,6 +281,51 @@
                 </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2901" y="133"/>
+        </scene>
+        <!--Finger Painter View Controller-->
+        <scene sceneID="28V-t4-gRm">
+            <objects>
+                <viewController id="N6n-9d-2tO" customClass="FingerPainterViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eDf-zq-yqa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lFY-tK-aZD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjw-uh-87M">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Ooh-Ed-oqZ"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Clear" id="pdG-wc-x0U">
+                                        <connections>
+                                            <action selector="clearImage:" destination="N6n-9d-2tO" id="xQM-P7-TVN"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lFY-tK-aZD" firstAttribute="top" secondItem="mlv-ka-c7E" secondAttribute="top" id="6yX-MC-aUr"/>
+                            <constraint firstItem="mjw-uh-87M" firstAttribute="leading" secondItem="mlv-ka-c7E" secondAttribute="leading" id="Dca-zx-5EE"/>
+                            <constraint firstItem="lFY-tK-aZD" firstAttribute="leading" secondItem="mlv-ka-c7E" secondAttribute="leading" id="Wus-uR-ZfK"/>
+                            <constraint firstItem="mjw-uh-87M" firstAttribute="trailing" secondItem="mlv-ka-c7E" secondAttribute="trailing" id="Yjn-ik-aCa"/>
+                            <constraint firstItem="mlv-ka-c7E" firstAttribute="trailing" secondItem="lFY-tK-aZD" secondAttribute="trailing" id="ord-US-IfP"/>
+                            <constraint firstItem="mjw-uh-87M" firstAttribute="bottom" secondItem="mlv-ka-c7E" secondAttribute="bottom" id="smM-3X-v8x"/>
+                            <constraint firstItem="mjw-uh-87M" firstAttribute="top" secondItem="lFY-tK-aZD" secondAttribute="bottom" id="wdM-uI-7iy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mlv-ka-c7E"/>
+                    </view>
+                    <connections>
+                        <outlet property="canvas" destination="lFY-tK-aZD" id="1Gg-8a-JGw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p1l-aa-wnG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3605" y="135"/>
         </scene>
     </scenes>
 </document>
