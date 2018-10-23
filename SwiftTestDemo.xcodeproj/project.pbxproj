@@ -21,6 +21,12 @@
 		0653F3B3217EBF240087ADA1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F3B1217EBF240087ADA1 /* MapViewController.swift */; };
 		0653F3B4217EBF240087ADA1 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F3B2217EBF240087ADA1 /* Pin.swift */; };
 		0653F3B7217EC0930087ADA1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0653F3B6217EC0930087ADA1 /* MapKit.framework */; };
+		0653F3BB217EC3420087ADA1 /* NoiseMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F3B9217EC3420087ADA1 /* NoiseMaker.swift */; };
+		0653F3BC217EC3420087ADA1 /* NoiseMakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F3BA217EC3420087ADA1 /* NoiseMakerViewController.swift */; };
+		0653F3C1217EC3510087ADA1 /* applause.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0653F3BD217EC3510087ADA1 /* applause.wav */; };
+		0653F3C2217EC3510087ADA1 /* bubbles.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0653F3BE217EC3510087ADA1 /* bubbles.wav */; };
+		0653F3C3217EC3520087ADA1 /* guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0653F3BF217EC3510087ADA1 /* guitar.wav */; };
+		0653F3C4217EC3520087ADA1 /* monster.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0653F3C0217EC3510087ADA1 /* monster.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +67,12 @@
 		0653F3B1217EBF240087ADA1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		0653F3B2217EBF240087ADA1 /* Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
 		0653F3B6217EC0930087ADA1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0653F3B9217EC3420087ADA1 /* NoiseMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoiseMaker.swift; sourceTree = "<group>"; };
+		0653F3BA217EC3420087ADA1 /* NoiseMakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoiseMakerViewController.swift; sourceTree = "<group>"; };
+		0653F3BD217EC3510087ADA1 /* applause.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = applause.wav; sourceTree = "<group>"; };
+		0653F3BE217EC3510087ADA1 /* bubbles.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bubbles.wav; sourceTree = "<group>"; };
+		0653F3BF217EC3510087ADA1 /* guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guitar.wav; sourceTree = "<group>"; };
+		0653F3C0217EC3510087ADA1 /* monster.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = monster.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +129,7 @@
 				0653F3A4217EB4CA0087ADA1 /* Clock */,
 				0653F3A9217EB7570087ADA1 /* Temperature */,
 				0653F3B0217EBF240087ADA1 /* Map */,
+				0653F3B8217EC3420087ADA1 /* Noise */,
 				0653F37A217EB32F0087ADA1 /* Main.storyboard */,
 				0653F37D217EB3320087ADA1 /* Assets.xcassets */,
 				0653F37F217EB3320087ADA1 /* LaunchScreen.storyboard */,
@@ -177,6 +190,19 @@
 				0653F3B6217EC0930087ADA1 /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0653F3B8217EC3420087ADA1 /* Noise */ = {
+			isa = PBXGroup;
+			children = (
+				0653F3BD217EC3510087ADA1 /* applause.wav */,
+				0653F3BE217EC3510087ADA1 /* bubbles.wav */,
+				0653F3BF217EC3510087ADA1 /* guitar.wav */,
+				0653F3C0217EC3510087ADA1 /* monster.wav */,
+				0653F3B9217EC3420087ADA1 /* NoiseMaker.swift */,
+				0653F3BA217EC3420087ADA1 /* NoiseMakerViewController.swift */,
+			);
+			path = Noise;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,9 +309,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0653F3C4217EC3520087ADA1 /* monster.wav in Resources */,
+				0653F3C3217EC3520087ADA1 /* guitar.wav in Resources */,
 				0653F381217EB3320087ADA1 /* LaunchScreen.storyboard in Resources */,
+				0653F3C2217EC3510087ADA1 /* bubbles.wav in Resources */,
 				0653F37E217EB3320087ADA1 /* Assets.xcassets in Resources */,
 				0653F37C217EB32F0087ADA1 /* Main.storyboard in Resources */,
+				0653F3C1217EC3510087ADA1 /* applause.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,12 +341,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0653F3A6217EB4E00087ADA1 /* StopWatch.swift in Sources */,
+				0653F3BB217EC3420087ADA1 /* NoiseMaker.swift in Sources */,
 				0653F3AD217EB7570087ADA1 /* UnitConverterViewController.swift in Sources */,
 				0653F3AF217EB7570087ADA1 /* TemperatureRange.swift in Sources */,
 				0653F3B4217EBF240087ADA1 /* Pin.swift in Sources */,
 				0653F379217EB32F0087ADA1 /* ViewController.swift in Sources */,
 				0653F3AE217EB7570087ADA1 /* UnitConverter.swift in Sources */,
 				0653F377217EB32F0087ADA1 /* AppDelegate.swift in Sources */,
+				0653F3BC217EC3420087ADA1 /* NoiseMakerViewController.swift in Sources */,
 				0653F3B3217EBF240087ADA1 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

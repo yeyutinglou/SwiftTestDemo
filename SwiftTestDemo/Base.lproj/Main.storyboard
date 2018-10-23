@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RXk-Hz-dHQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Na-dp-mxb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -139,6 +139,77 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NJM-8I-Q5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1517" y="134"/>
+        </scene>
+        <!--Noise Maker View Controller-->
+        <scene sceneID="uUv-wF-PEP">
+            <objects>
+                <viewController id="3Na-dp-mxb" customClass="NoiseMakerViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dyq-wp-aoY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Arg-oO-y16">
+                                <rect key="frame" x="67.5" y="120" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="DZD-au-eAk"/>
+                                    <constraint firstAttribute="width" constant="100" id="Gbh-ZV-HrP"/>
+                                </constraints>
+                                <state key="normal" title="guitar"/>
+                                <connections>
+                                    <action selector="playNoise:" destination="3Na-dp-mxb" eventType="touchUpInside" id="Lcn-d8-kA2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dd2-Ut-2g0">
+                                <rect key="frame" x="207.5" y="120" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="M3s-f4-N7g"/>
+                                    <constraint firstAttribute="height" constant="100" id="VpZ-7S-tER"/>
+                                </constraints>
+                                <state key="normal" title="applause"/>
+                                <connections>
+                                    <action selector="playNoise:" destination="3Na-dp-mxb" eventType="touchUpInside" id="5pL-VF-NXQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fdp-Tn-pEf">
+                                <rect key="frame" x="67.5" y="373" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="7MU-rU-dKB"/>
+                                    <constraint firstAttribute="height" constant="100" id="CjE-KO-oeL"/>
+                                </constraints>
+                                <state key="normal" title="monster"/>
+                                <connections>
+                                    <action selector="playNoise:" destination="3Na-dp-mxb" eventType="touchUpInside" id="inX-11-35o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXf-bi-Zfp">
+                                <rect key="frame" x="207.5" y="373" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="DXh-3Z-V22"/>
+                                    <constraint firstAttribute="height" constant="100" id="nKd-Ep-dGI"/>
+                                </constraints>
+                                <state key="normal" title="bubbles"/>
+                                <connections>
+                                    <action selector="playNoise:" destination="3Na-dp-mxb" eventType="touchUpInside" id="ie4-rW-BaX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Fdp-Tn-pEf" firstAttribute="centerX" secondItem="Dyq-wp-aoY" secondAttribute="centerX" constant="-70" id="L6c-hK-MU0"/>
+                            <constraint firstItem="dd2-Ut-2g0" firstAttribute="top" secondItem="Crf-Tp-xyS" secondAttribute="top" constant="100" id="PrH-0r-PWI"/>
+                            <constraint firstItem="Arg-oO-y16" firstAttribute="centerX" secondItem="Dyq-wp-aoY" secondAttribute="centerX" constant="-70" id="XdJ-UN-e5A"/>
+                            <constraint firstItem="sXf-bi-Zfp" firstAttribute="centerX" secondItem="Dyq-wp-aoY" secondAttribute="centerX" constant="70" id="hlC-cN-yR2"/>
+                            <constraint firstItem="Arg-oO-y16" firstAttribute="top" secondItem="Crf-Tp-xyS" secondAttribute="top" constant="100" id="mnP-6L-n5x"/>
+                            <constraint firstItem="Fdp-Tn-pEf" firstAttribute="top" secondItem="Arg-oO-y16" secondAttribute="bottom" constant="153" id="rjK-KU-iab"/>
+                            <constraint firstItem="sXf-bi-Zfp" firstAttribute="top" secondItem="dd2-Ut-2g0" secondAttribute="bottom" constant="153" id="s8l-7G-qK0"/>
+                            <constraint firstItem="dd2-Ut-2g0" firstAttribute="centerX" secondItem="Dyq-wp-aoY" secondAttribute="centerX" constant="70" id="tSo-pU-GVq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Crf-Tp-xyS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YeC-dG-wJP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2164" y="136"/>
         </scene>
     </scenes>
 </document>
