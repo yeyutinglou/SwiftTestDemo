@@ -35,6 +35,11 @@
 		0653F3D9217EEC450087ADA1 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F3D4217EEC450087ADA1 /* Deck.swift */; };
 		0653F3DA217EEC450087ADA1 /* TermViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F3D5217EEC450087ADA1 /* TermViewController.swift */; };
 		0653F3DD217EFB4B0087ADA1 /* TopMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F3DC217EFB4B0087ADA1 /* TopMediaViewController.swift */; };
+		0653F3E0217F285F0087ADA1 /* JournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F3DF217F285F0087ADA1 /* JournalTableViewController.swift */; };
+		0653F3E2217F28840087ADA1 /* JournalEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F3E1217F28840087ADA1 /* JournalEntryViewController.swift */; };
+		0653F3E4217F28990087ADA1 /* NewJournalEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F3E3217F28990087ADA1 /* NewJournalEntryViewController.swift */; };
+		0653F3E6217F28AF0087ADA1 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F3E5217F28AF0087ADA1 /* JournalEntry.swift */; };
+		0653F3E8217F28BB0087ADA1 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F3E7217F28BB0087ADA1 /* Journal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +94,11 @@
 		0653F3D4217EEC450087ADA1 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		0653F3D5217EEC450087ADA1 /* TermViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermViewController.swift; sourceTree = "<group>"; };
 		0653F3DC217EFB4B0087ADA1 /* TopMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMediaViewController.swift; sourceTree = "<group>"; };
+		0653F3DF217F285F0087ADA1 /* JournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTableViewController.swift; sourceTree = "<group>"; };
+		0653F3E1217F28840087ADA1 /* JournalEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryViewController.swift; sourceTree = "<group>"; };
+		0653F3E3217F28990087ADA1 /* NewJournalEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJournalEntryViewController.swift; sourceTree = "<group>"; };
+		0653F3E5217F28AF0087ADA1 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		0653F3E7217F28BB0087ADA1 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +160,7 @@
 				0653F3CD217EEB130087ADA1 /* Painter */,
 				0653F3D0217EEC450087ADA1 /* Flashcards */,
 				0653F3DB217EFB240087ADA1 /* RSSReader */,
+				0653F3DE217F280E0087ADA1 /* Journal */,
 				0653F37A217EB32F0087ADA1 /* Main.storyboard */,
 				0653F37D217EB3320087ADA1 /* Assets.xcassets */,
 				0653F37F217EB3320087ADA1 /* LaunchScreen.storyboard */,
@@ -259,6 +270,18 @@
 				0653F3DC217EFB4B0087ADA1 /* TopMediaViewController.swift */,
 			);
 			path = RSSReader;
+			sourceTree = "<group>";
+		};
+		0653F3DE217F280E0087ADA1 /* Journal */ = {
+			isa = PBXGroup;
+			children = (
+				0653F3DF217F285F0087ADA1 /* JournalTableViewController.swift */,
+				0653F3E1217F28840087ADA1 /* JournalEntryViewController.swift */,
+				0653F3E3217F28990087ADA1 /* NewJournalEntryViewController.swift */,
+				0653F3E5217F28AF0087ADA1 /* JournalEntry.swift */,
+				0653F3E7217F28BB0087ADA1 /* Journal.swift */,
+			);
+			path = Journal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,19 +423,24 @@
 				0653F3BB217EC3420087ADA1 /* NoiseMaker.swift in Sources */,
 				0653F3AD217EB7570087ADA1 /* UnitConverterViewController.swift in Sources */,
 				0653F3DD217EFB4B0087ADA1 /* TopMediaViewController.swift in Sources */,
+				0653F3E6217F28AF0087ADA1 /* JournalEntry.swift in Sources */,
 				0653F3CF217EEB130087ADA1 /* FingerPainterViewController.swift in Sources */,
+				0653F3E4217F28990087ADA1 /* NewJournalEntryViewController.swift in Sources */,
 				0653F3AF217EB7570087ADA1 /* TemperatureRange.swift in Sources */,
+				0653F3E2217F28840087ADA1 /* JournalEntryViewController.swift in Sources */,
 				0653F3B4217EBF240087ADA1 /* Pin.swift in Sources */,
 				0653F3D8217EEC450087ADA1 /* Flashcard.swift in Sources */,
 				0653F379217EB32F0087ADA1 /* ViewController.swift in Sources */,
 				0653F3D7217EEC450087ADA1 /* DefinitionViewController.swift in Sources */,
 				0653F3AE217EB7570087ADA1 /* UnitConverter.swift in Sources */,
+				0653F3E8217F28BB0087ADA1 /* Journal.swift in Sources */,
 				0653F3D6217EEC450087ADA1 /* SearchViewController.swift in Sources */,
 				0653F377217EB32F0087ADA1 /* AppDelegate.swift in Sources */,
 				0653F3D9217EEC450087ADA1 /* Deck.swift in Sources */,
 				0653F3BC217EC3420087ADA1 /* NoiseMakerViewController.swift in Sources */,
 				0653F3CA217ECA580087ADA1 /* GesturizerViewController.swift in Sources */,
 				0653F3DA217EEC450087ADA1 /* TermViewController.swift in Sources */,
+				0653F3E0217F285F0087ADA1 /* JournalTableViewController.swift in Sources */,
 				0653F3B3217EBF240087ADA1 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
