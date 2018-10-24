@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tGe-NR-gLB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zS1-pU-Aez">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -56,7 +57,7 @@
         <!--Unit Converter View Controller-->
         <scene sceneID="ogk-rp-oor">
             <objects>
-                <viewController id="oSw-Qw-1QL" customClass="UnitConverterViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oSw-Qw-1QL" customClass="UnitConverterViewController" customModule="SwiftTestDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZOa-Fg-aLz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,14 +88,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kOs-Rw-HGi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="bIu-h2-Szy" customClass="TemperatureRange" customModule="SwiftDemo" customModuleProvider="target"/>
+                <customObject id="bIu-h2-Szy" customClass="TemperatureRange" customModule="SwiftTestDemo" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="-50" y="-346"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="DGA-ta-kcr">
             <objects>
-                <viewController id="RXk-Hz-dHQ" customClass="MapViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RXk-Hz-dHQ" customClass="MapViewController" customModule="SwiftTestDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7nQ-iG-5QE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,7 +144,7 @@
         <!--Noise Maker View Controller-->
         <scene sceneID="uUv-wF-PEP">
             <objects>
-                <viewController id="3Na-dp-mxb" customClass="NoiseMakerViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3Na-dp-mxb" customClass="NoiseMakerViewController" customModule="SwiftTestDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dyq-wp-aoY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -214,7 +215,7 @@
         <!--Gesturizer View Controller-->
         <scene sceneID="UaL-eH-XpZ">
             <objects>
-                <viewController id="s7B-ei-Qc1" customClass="GesturizerViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="s7B-ei-Qc1" customClass="GesturizerViewController" customModule="SwiftTestDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eW0-Vw-I1m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -285,7 +286,7 @@
         <!--Finger Painter View Controller-->
         <scene sceneID="28V-t4-gRm">
             <objects>
-                <viewController id="N6n-9d-2tO" customClass="FingerPainterViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="N6n-9d-2tO" customClass="FingerPainterViewController" customModule="SwiftTestDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eDf-zq-yqa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -533,7 +534,7 @@
         <!--Term-->
         <scene sceneID="9qL-Ia-vjr">
             <objects>
-                <viewController id="C8Y-wD-Jh3" customClass="TermViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="C8Y-wD-Jh3" customClass="TermViewController" customModule="SwiftTestDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yq4-Pd-lYc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -570,7 +571,7 @@
         <!--Search-->
         <scene sceneID="PQn-yn-SJg">
             <objects>
-                <viewController id="SJj-ON-fYz" customClass="SearchViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SJj-ON-fYz" customClass="SearchViewController" customModule="SwiftTestDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WUr-he-EwK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -601,7 +602,7 @@
         <!--Definition-->
         <scene sceneID="mYS-eO-o52">
             <objects>
-                <viewController id="K36-jB-oks" customClass="DefinitionViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="K36-jB-oks" customClass="DefinitionViewController" customModule="SwiftTestDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SGA-YU-1tB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -797,6 +798,75 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uZe-Ho-0L7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1543" y="4506"/>
+        </scene>
+        <!--Food Tacker View Controller-->
+        <scene sceneID="C07-KW-PGW">
+            <objects>
+                <viewController id="zS1-pU-Aez" customClass="FoodTackerViewController" customModule="SwiftTestDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dX4-rA-6a4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="9Nl-jG-jCN">
+                                <rect key="frame" x="0.0" y="40" width="375" height="177.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYg-tG-VmA">
+                                        <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T0n-oP-PLt">
+                                        <rect key="frame" x="0.0" y="43.5" width="375" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G92-1c-TvA">
+                                        <rect key="frame" x="0.0" y="96.5" width="151" height="30"/>
+                                        <state key="normal" title="Set Default Label Text"/>
+                                        <connections>
+                                            <action selector="setDefaultLabelText:" destination="zS1-pU-Aez" eventType="touchUpInside" id="ccG-oj-VOq"/>
+                                        </connections>
+                                    </button>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Top Album Icon" translatesAutoresizingMaskIntoConstraints="NO" id="VNV-be-bPj">
+                                        <rect key="frame" x="0.0" y="149.5" width="28" height="28"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="VNV-be-bPj" secondAttribute="height" multiplier="1:1" id="UcU-VP-qxf"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="ZeW-ZB-GKh" appends="YES" id="hYU-Jp-Dyg"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="T0n-oP-PLt" secondAttribute="trailing" id="zcQ-8E-cyK"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9Nl-jG-jCN" firstAttribute="leading" secondItem="Xjx-Bb-zkc" secondAttribute="leading" id="7aF-FU-muE"/>
+                            <constraint firstItem="9Nl-jG-jCN" firstAttribute="top" secondItem="Xjx-Bb-zkc" secondAttribute="top" constant="20" id="f3f-yF-Cyb"/>
+                            <constraint firstItem="Xjx-Bb-zkc" firstAttribute="trailing" secondItem="9Nl-jG-jCN" secondAttribute="trailing" id="ysD-UH-OIc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xjx-Bb-zkc"/>
+                    </view>
+                    <connections>
+                        <outlet property="mealNameLabel" destination="PYg-tG-VmA" id="GLe-jp-Rzg"/>
+                        <outlet property="nameTextField" destination="T0n-oP-PLt" id="0g1-4W-Yfe"/>
+                        <outlet property="photoImageView" destination="VNV-be-bPj" id="s94-CM-G2W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zu1-vF-wJV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ZeW-ZB-GKh">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="zS1-pU-Aez" id="3zt-LU-xst"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-2146.4000000000001" y="5213.3433283358327"/>
         </scene>
         <!--Journal Entry View Controller-->
         <scene sceneID="Vg2-la-ja0">

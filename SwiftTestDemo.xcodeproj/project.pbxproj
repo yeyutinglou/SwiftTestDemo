@@ -46,6 +46,7 @@
 		0653F3F12180674F0087ADA1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F3F02180674F0087ADA1 /* GameScene.swift */; };
 		0653F3F421807BA80087ADA1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0653F3F221807BA80087ADA1 /* GameScene.sks */; };
 		0653F3F521807BA80087ADA1 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0653F3F321807BA80087ADA1 /* Actions.sks */; };
+		80D4231F2180AAB60022409B /* FoodTackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D4231E2180AAB60022409B /* FoodTackerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		0653F3F02180674F0087ADA1 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		0653F3F221807BA80087ADA1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		0653F3F321807BA80087ADA1 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		80D4231E2180AAB60022409B /* FoodTackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTackerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				0653F3DB217EFB240087ADA1 /* RSSReader */,
 				0653F3DE217F280E0087ADA1 /* Journal */,
 				0653F3E9218066150087ADA1 /* Game */,
+				80D4231D2180AA260022409B /* FoodTracker */,
 				0653F37A217EB32F0087ADA1 /* Main.storyboard */,
 				0653F37D217EB3320087ADA1 /* Assets.xcassets */,
 				0653F37F217EB3320087ADA1 /* LaunchScreen.storyboard */,
@@ -310,6 +313,14 @@
 				0653F3F02180674F0087ADA1 /* GameScene.swift */,
 			);
 			path = Game;
+			sourceTree = "<group>";
+		};
+		80D4231D2180AA260022409B /* FoodTracker */ = {
+			isa = PBXGroup;
+			children = (
+				80D4231E2180AAB60022409B /* FoodTackerViewController.swift */,
+			);
+			path = FoodTracker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,6 +460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80D4231F2180AAB60022409B /* FoodTackerViewController.swift in Sources */,
 				0653F3A6217EB4E00087ADA1 /* StopWatch.swift in Sources */,
 				0653F3BB217EC3420087ADA1 /* NoiseMaker.swift in Sources */,
 				0653F3AD217EB7570087ADA1 /* UnitConverterViewController.swift in Sources */,
