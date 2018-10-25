@@ -808,7 +808,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="9Nl-jG-jCN">
-                                <rect key="frame" x="0.0" y="40" width="375" height="177.5"/>
+                                <rect key="frame" x="20" y="40" width="335" height="551.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYg-tG-VmA">
                                         <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
@@ -816,8 +816,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T0n-oP-PLt">
-                                        <rect key="frame" x="0.0" y="43.5" width="375" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T0n-oP-PLt">
+                                        <rect key="frame" x="0.0" y="43.5" width="335" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
@@ -829,8 +829,8 @@
                                             <action selector="setDefaultLabelText:" destination="zS1-pU-Aez" eventType="touchUpInside" id="ccG-oj-VOq"/>
                                         </connections>
                                     </button>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Top Album Icon" translatesAutoresizingMaskIntoConstraints="NO" id="VNV-be-bPj">
-                                        <rect key="frame" x="0.0" y="149.5" width="28" height="28"/>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="VNV-be-bPj">
+                                        <rect key="frame" x="0.0" y="149.5" width="335" height="335"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="VNV-be-bPj" secondAttribute="height" multiplier="1:1" id="UcU-VP-qxf"/>
@@ -839,6 +839,9 @@
                                             <outletCollection property="gestureRecognizers" destination="ZeW-ZB-GKh" appends="YES" id="hYU-Jp-Dyg"/>
                                         </connections>
                                     </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LVA-m6-fIf" customClass="RatingControl" customModule="SwiftTestDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="507.5" width="252" height="44"/>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="T0n-oP-PLt" secondAttribute="trailing" id="zcQ-8E-cyK"/>
@@ -847,9 +850,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="9Nl-jG-jCN" firstAttribute="leading" secondItem="Xjx-Bb-zkc" secondAttribute="leading" id="7aF-FU-muE"/>
+                            <constraint firstItem="9Nl-jG-jCN" firstAttribute="leading" secondItem="Xjx-Bb-zkc" secondAttribute="leading" constant="20" id="7aF-FU-muE"/>
                             <constraint firstItem="9Nl-jG-jCN" firstAttribute="top" secondItem="Xjx-Bb-zkc" secondAttribute="top" constant="20" id="f3f-yF-Cyb"/>
-                            <constraint firstItem="Xjx-Bb-zkc" firstAttribute="trailing" secondItem="9Nl-jG-jCN" secondAttribute="trailing" id="ysD-UH-OIc"/>
+                            <constraint firstItem="Xjx-Bb-zkc" firstAttribute="trailing" secondItem="9Nl-jG-jCN" secondAttribute="trailing" constant="20" id="ysD-UH-OIc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Xjx-Bb-zkc"/>
                     </view>
@@ -922,5 +925,6 @@
         <image name="Top App Icon" width="18" height="28"/>
         <image name="Top Movie Icon" width="22" height="28"/>
         <image name="Top Song Icon" width="17" height="29"/>
+        <image name="defaultPhoto" width="540" height="540"/>
     </resources>
 </document>

@@ -46,6 +46,7 @@
 		0653F3F12180674F0087ADA1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F3F02180674F0087ADA1 /* GameScene.swift */; };
 		0653F3F421807BA80087ADA1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0653F3F221807BA80087ADA1 /* GameScene.sks */; };
 		0653F3F521807BA80087ADA1 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0653F3F321807BA80087ADA1 /* Actions.sks */; };
+		0653F3F7218154780087ADA1 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F3F6218154780087ADA1 /* RatingControl.swift */; };
 		80D4231F2180AAB60022409B /* FoodTackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D4231E2180AAB60022409B /* FoodTackerViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +113,7 @@
 		0653F3F02180674F0087ADA1 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		0653F3F221807BA80087ADA1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		0653F3F321807BA80087ADA1 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		0653F3F6218154780087ADA1 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		80D4231E2180AAB60022409B /* FoodTackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTackerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -319,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				80D4231E2180AAB60022409B /* FoodTackerViewController.swift */,
+				0653F3F6218154780087ADA1 /* RatingControl.swift */,
 			);
 			path = FoodTracker;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				0653F3A6217EB4E00087ADA1 /* StopWatch.swift in Sources */,
 				0653F3BB217EC3420087ADA1 /* NoiseMaker.swift in Sources */,
 				0653F3AD217EB7570087ADA1 /* UnitConverterViewController.swift in Sources */,
+				0653F3F7218154780087ADA1 /* RatingControl.swift in Sources */,
 				0653F3DD217EFB4B0087ADA1 /* TopMediaViewController.swift in Sources */,
 				0653F3EB218066440087ADA1 /* GameViewController.swift in Sources */,
 				0653F3E6217F28AF0087ADA1 /* JournalEntry.swift in Sources */,
