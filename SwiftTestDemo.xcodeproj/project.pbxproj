@@ -47,6 +47,9 @@
 		0653F3F421807BA80087ADA1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0653F3F221807BA80087ADA1 /* GameScene.sks */; };
 		0653F3F521807BA80087ADA1 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0653F3F321807BA80087ADA1 /* Actions.sks */; };
 		0653F3F7218154780087ADA1 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653F3F6218154780087ADA1 /* RatingControl.swift */; };
+		0658C53C218AE65E0045AE91 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0658C53B218AE65E0045AE91 /* Meal.swift */; };
+		0658C53E218AED550045AE91 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0658C53D218AED550045AE91 /* MealTableViewController.swift */; };
+		0658C540218AEDA60045AE91 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0658C53F218AEDA60045AE91 /* MealTableViewCell.swift */; };
 		80D4231F2180AAB60022409B /* FoodTackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D4231E2180AAB60022409B /* FoodTackerViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +117,9 @@
 		0653F3F221807BA80087ADA1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		0653F3F321807BA80087ADA1 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		0653F3F6218154780087ADA1 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		0658C53B218AE65E0045AE91 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		0658C53D218AED550045AE91 /* MealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
+		0658C53F218AEDA60045AE91 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		80D4231E2180AAB60022409B /* FoodTackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTackerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -322,6 +328,9 @@
 			children = (
 				80D4231E2180AAB60022409B /* FoodTackerViewController.swift */,
 				0653F3F6218154780087ADA1 /* RatingControl.swift */,
+				0658C53B218AE65E0045AE91 /* Meal.swift */,
+				0658C53D218AED550045AE91 /* MealTableViewController.swift */,
+				0658C53F218AEDA60045AE91 /* MealTableViewCell.swift */,
 			);
 			path = FoodTracker;
 			sourceTree = "<group>";
@@ -475,10 +484,13 @@
 				0653F3E4217F28990087ADA1 /* NewJournalEntryViewController.swift in Sources */,
 				0653F3AF217EB7570087ADA1 /* TemperatureRange.swift in Sources */,
 				0653F3E2217F28840087ADA1 /* JournalEntryViewController.swift in Sources */,
+				0658C53E218AED550045AE91 /* MealTableViewController.swift in Sources */,
 				0653F3F12180674F0087ADA1 /* GameScene.swift in Sources */,
+				0658C540218AEDA60045AE91 /* MealTableViewCell.swift in Sources */,
 				0653F3B4217EBF240087ADA1 /* Pin.swift in Sources */,
 				0653F3D8217EEC450087ADA1 /* Flashcard.swift in Sources */,
 				0653F379217EB32F0087ADA1 /* ViewController.swift in Sources */,
+				0658C53C218AE65E0045AE91 /* Meal.swift in Sources */,
 				0653F3D7217EEC450087ADA1 /* DefinitionViewController.swift in Sources */,
 				0653F3AE217EB7570087ADA1 /* UnitConverter.swift in Sources */,
 				0653F3E8217F28BB0087ADA1 /* Journal.swift in Sources */,
