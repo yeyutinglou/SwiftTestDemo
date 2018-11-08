@@ -25,12 +25,8 @@ class MealTableViewController: UITableViewController {
     
     
      // MARK: - Private Methods
-    
-   
-    
-    
     private func loadSampleMeals() {
-         let photo = UIImage(named: "defalutPhoto")
+         let photo = UIImage(named: "defaultPhoto")
         guard let meal1 = Meal(name: "capress salad", photo: photo, rating: 4) else {
             fatalError("unable to instantiate meal")
         }
@@ -41,18 +37,31 @@ class MealTableViewController: UITableViewController {
             fatalError("unable")
         }
         meals += [meal1, meal2, meal3]
+        tableView.reloadData()
     }
+    
+     // MARK: - Action
+    @IBAction func unwindToMealList(_ unwindSegue: UIStoryboardSegue) {
+        if let sourceViewController = unwindSegue.source as? FoodTackerViewController, let meal = sourceViewController.meal {
+            
+            let newIndexPath = IndexPath(row: meals.count, section: 0)
+            meals.append(meal)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+            
+        }
+    }
+    
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return meals.count
     }
 
  

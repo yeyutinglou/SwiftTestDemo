@@ -14,12 +14,27 @@ class FoodTackerViewController: UIViewController, UITextFieldDelegate, UIImagePi
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var photoImageView: UIImageView!
     
+    @IBOutlet weak var ratingControl: RatingControl!
+    @IBOutlet weak var canelButton: UIBarButtonItem!
+    
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    
+    var meal: Meal?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         nameTextField.delegate = self
+        
+        updateSaveButtonState()
+    }
+    
+     // MARK: - Private Methods
+    private func updateSaveButtonState() {
+        let text = nameTextField.text ?? ""
+        saveButton.isEnabled = !text.isEmpty
+        
     }
     
     
@@ -37,16 +52,25 @@ class FoodTackerViewController: UIViewController, UITextFieldDelegate, UIImagePi
         present(imagePicker, animated: true, completion: nil)
     }
     
+    @IBAction func cancel(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
     
     
     // MARK: - UITextFieldDelegate
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        saveButton.isEnabled = false
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
+        updateSaveButtonState()
         mealNameLabel.text = nameTextField.text
     }
     
@@ -65,14 +89,24 @@ class FoodTackerViewController: UIViewController, UITextFieldDelegate, UIImagePi
     }
     
 
-    /*
+ 
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        super.prepare(for: segue, sender: sender)
+        
+        guard let button = sender as? UIBarButtonItem,button === saveButton else {
+            fatalError("not save Button")
+        }
+        
+        let name = nameTextField.text ?? ""
+        let photo = photoImageView.image
+        let rating = ratingControl.rating
+        meal = Meal(name: name, photo: photo, rating: rating)
     }
-    */
+
 
 }
